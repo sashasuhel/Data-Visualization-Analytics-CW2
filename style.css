@@ -1,0 +1,347 @@
+/*
+Author: Sasha Fathima Suhel
+Filename: index.css
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Passion+One&display=swap");
+
+* {
+  font-family: "Passion One", cursive;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(255 228 230), rgb(253 164 175));
+  margin: 0;
+  padding: 0;
+}
+
+#b1 {
+  background-color: rgb(254 205 211);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border: 1px solid rgb(254 205 211);
+  border-bottom: 1px solid rgb(254 205 211);
+  color: rgb(69 10 10);
+  cursor: pointer;
+  /* display: inline-block; */
+  font-family: "Passion One", cursive;
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 1;
+  margin-right: 50px;
+  outline: none;
+  padding: 9px 0.8em;
+  position: relative;
+  text-align: center;
+}
+
+#b1:hover,
+#b1:focus {
+  background-color: rgb(253 164 175);
+  color: #ffffff;
+}
+
+.map-svg {
+  cursor: pointer;
+}
+
+#layout-1 {
+  overflow: hidden;
+  background-color: rgb(127 29 29);
+  margin: 15px;
+  border-radius: 10px;
+}
+
+h2,
+h1,
+h3 {
+  font-weight: normal;
+}
+
+#map-container {
+  color: #ffffff;
+  margin: 20px;
+  max-width: 700px;
+  float: left;
+}
+
+
+
+#gender-imbalance-container {
+  margin-top: 25px;
+  max-width: 750px;
+  float: right;
+  color: rgb(255, 255, 255);
+  font-style: normal;
+}
+
+#layout-2 {
+  overflow: hidden;
+  background-color: rgb(127 29 29);
+  margin: 15px;
+  border-radius: 10px;
+}
+
+#layout-3 {
+  overflow: hidden;
+  background-color: rgb(127 29 29);
+  margin: 15px;
+  text-align: center;
+  color: #ffff;
+  height: 670px;
+  border-radius: 10px;
+}
+
+#timeline-container {
+  /* border: 3px solid black ; */
+  margin: 15px;
+  max-width: 750px;
+  float: right;
+  background-color: rgb(127 29 29);
+  color: #ffffff;
+}
+
+#bubble-container {
+  /* border: 3px solid black ; */
+  max-width: 700px;
+  margin: 15px;
+  float: left;
+  background-color: rgb(127 29 29);
+  color: #ffffff;
+}
+
+#play-clock {
+  text-align: center;
+}
+
+#mapViz {
+  margin-top: 10%;
+  scale: 100%;
+}
+
+#play {
+  background-color: rgb(255 228 230);
+  border: 0.1px solid rgb(255 228 230);
+  border-radius: 5px;
+  color: rgb(69 10 10);
+  cursor: pointer;
+  font-family: "Passion One", cursive;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15385;
+  margin-left: 10px;
+  margin-right: 10px;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+}
+
+#play:hover,
+#play:focus {
+  background-color: rgb(253 164 175);
+  color: #ffffff;
+}
+
+#dropDown {
+  background-color: rgb(255 228 230);
+  color: rgb(69 10 10);
+  cursor: pointer;
+  font-family: "Passion One", cursive;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15385;
+  margin: 10px;
+  outline: none;
+  padding: 8px 0.8em;
+  position: relative;
+  text-align: center;
+}
+
+#dropDown:hover,
+#dropDown:focus {
+  background-color: rgb(253 164 175);
+  color: #ffffff;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(69 10 10);
+  border-radius: 0px;
+}
+
+#buttonYcont {
+  background-color: rgb(253 164 175);
+  border: 3.5px solid rgb(69 10 10);
+  border-radius: 3px;
+  cursor: pointer;
+  font-family: "Passion One", cursive;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.15385;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 5px;
+  position: relative;
+  text-align: center;
+}
+
+/* Header */
+header {
+  background-color: #bd0862;
+  color: #ffff;
+  padding: 5px 0;
+}
+
+.header-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: left;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0 13px;
+  animation: bounce-in 5s ease-out;
+}
+
+
+@keyframes bounce-in {
+  0% {
+    transform: translateY(-50px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.logo {
+  font-size: 36px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.pink-text {
+  color: rgb(251 113 133);
+}
+
+nav ul {
+  display: flex;
+}
+
+nav li {
+  margin-right: auto;
+}
+
+nav a {
+  color: rgb(251 113 133);
+  font-size: 23px;
+  margin-left: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav {
+  background-color: rgb(254 205 211);
+  display: flex;
+  justify-content: space-between;
+  padding: 9px;
+  width: 100%;
+  margin: 0;
+}
+
+nav a:hover {
+  color: #bd0862;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 7px 15px;
+}
+
+/* Footer */
+.main-footer {
+  background-color: rgb(254 205 211);
+  color: rgb(127 29 29);
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex-basis: calc(33.33% - 20px);
+  margin-bottom: 2px;
+}
+
+h3 {
+  font-size: 24px;
+  margin-bottom: 3px;
+}
+
+p {
+  font-size: 20px;
+  line-height: 30px;
+  margin-bottom: 4px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin: 0 10px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #ffffff;
+  border-radius: 50%;
+  background-color: rgb(255 228 230);
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  background-color: rgb(253 164 175);
+  color: #651414;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: px;
+  padding-top: 60px;
+  border-top: 2px solid #ffff;
+}
+
+/* Loading Screen */
+.loading-text {
+  animation: wiggle 2s ease-in-out infinite;
+  position: absolute;
+  top: 60%;
+  margin-left: 20%;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

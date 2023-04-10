@@ -1,0 +1,154 @@
+/*
+Author: Sasha Fathima Suhel
+Filename: index.css
+*/
+
+  @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+
+* {
+    font-family: 'Passion One', cursive;
+}
+
+body {
+  background: linear-gradient(to bottom, rgb(255 228 230),rgb(253 164 175));
+}
+
+.axisWhite line {
+    stroke-opacity: 0.1;
+}
+
+.axisWhite path {
+    stroke-opacity: 0.1;
+}
+
+.axisWhite text {
+    fill: rgb(245, 239, 244);
+}
+
+.linePink {
+    fill: none;
+    stroke: rgb(215, 32, 133);
+    stroke-width: 3px;
+}
+
+.linePurple {
+    fill: none;
+    stroke: rgb(32, 2, 32);
+    stroke-width: 3px;
+}
+
+#xAxis .tick line {
+    visibility: hidden;
+}
+
+.selected {
+    fill: rgb(246, 96, 96) !important;
+}
+
+.swatch {
+    fill-opacity: .45;
+}
+.main-footer {
+    background-color: rgb(254 205 211);
+    color: rgb(127 29 29);
+    padding: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex-basis: calc(33.33% - 20px);
+    margin-bottom: 10px;
+  }
+  
+  h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 25px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 10px;
+    border-radius: 30%;
+    background-color: rgb(254 205 211);
+  }
+  
+  .social-icons a:hover {
+    background-color: rgb(253 164 175);
+    color: #333;
+  }
+  
+  .footer-bottom {
+    text-align: center;  
+    margin-top: 50px;   
+    padding-top: 60px;
+    border-top: 2px solid #fff;
+  }
+  header {
+    background-color: #bd0862;
+    color: #fff;
+    padding: 50px 0;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  .logo {
+    font-size: 36px;
+    font-weight: bold;
+    margin-left: 20px;
+  }
+  
+  .pink-text {
+    color: rgb(251 113 133);
+  }
+  
+  nav ul {
+    display: flex;
+  }
+  
+  nav li {
+    margin-left: 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    color: #ff6bcb;
+  }
+  
+  .legendLabel {
+    fill: white;
+  }
+
+  .legendCells text {
+    fill: white;
+  }
+
+  
