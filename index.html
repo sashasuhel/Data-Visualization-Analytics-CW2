@@ -1,0 +1,105 @@
+<!--
+Author: Sasha Fathima Suhel
+Filename: index.html
+-->
+
+<!doctype html>
+<html lang="en">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <head>
+        <title></title>
+        <!-- import d3.js version 7 -->
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="https://d3js.org/topojson.v1.min.js"></script>
+        <!-- import other stylesheets -->
+        <link rel="stylesheet" href="style.css">
+        <!-- import font awesome-->
+        <script
+        src="https://kit.fontawesome.com/371e2068b3.js"
+        crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <div class="outer-wrapper h-screen w-full bg-rose-100">
+            <!-- headerbar -->
+            <div class="header-container">
+              <h1 class="logo"><span class="pink-text">MY</span> Statistical World Data Dashboard</h1>
+            </div>
+            <!-- navbar -->
+            <nav>
+                <a href="CW1/index.html" target="_blank">Covid-19 Dashboard</a> 
+                <a href="https://github.com/sashasuhel/Data-Visualization-Analytics-CW2" target="_blank"style="margin-right: auto;">Github</a>
+            </nav>
+        </div>
+        <div id="layout-1">
+            <div id="map-container">
+                <h2>Population Choropleth</h2>
+                <div style="margin-left: 80px;">
+                    <button id="b1" onclick="displayCount()">Population Count</button>
+                    <button id="b1" onclick="displayDensity()">Population Density</button>
+                    <button id="b1" onclick="displayGenderImbalance()">Gender Imbalance</button>
+                </div>
+                <script src="JS/PopCount.js"></script>
+                <script src="JS/PopDensity.js"></script>
+                <script src="JS/GenderImbalance.js"></script>
+            </div>
+            <div id="gender-imbalance-container" style="margin-right: 35px;">
+                <h2>Gender Count Bar Chart</h2>
+                <script src="JS/GenderBar.js"></script>
+            </div>
+        </div>
+        <div id="layout-2">
+            <div id="bubble-container">
+                <div id="txt-container">
+                    <h2>World Major Religions</h2>
+                    <p>A visualisation on the comparison in size of population for the religions between the countries.</p>
+                    <p>HOVER OVER THE BUBBLES.</p>
+                </div>
+                <script src="JS/WorldReligions.js"></script>
+            </div>
+            <div id="timeline-container">
+                <h2>Religion Growth Timeline</h2>
+                <p>A visualisation to show how religions over the world had spread over time across the globe.</p>
+                <div id="play-clock">
+                    <select id="dropDown"></select>
+                    <button id="play" onclick="runAnimation()">Play</button>
+                    <span id="clock">Year</span>
+                </div>
+                <svg id="mapViz" width="800" height="450"></svg>
+                <script src="JS/ReligionTimeline.js"></script>
+            </div>
+        </div>
+        <div id="layout-3">
+            <h2>Literacy Vs Male to Female Ratio Scatter Plot</h2>
+            <input type="number" id="buttonYcont" value=3>
+            <div id="scatter">
+                <script src="JS/Scatter.js"></script>
+            </div>
+        </div>
+        <footer class="main-footer">
+            <div class="footer-container">
+              <div class="footer-column">
+                <h3>About Me</h3>
+                <p>I'm Sasha Suhel, a web developer based in Dubai. I specialize in building responsive, user-friendly websites using the latest technologies.</p>
+              </div>
+              <div class="footer-column">
+                <h3>Contact Me</h3>
+                <p>Email : sfs2001@hw.ac.uk</p>
+                <p>HW ID: H00410394</p>
+              </div>
+              <div class="footer-column">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                  <a href="https://www.facebook.com/sasha.suhel/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.linkedin.com/in/sasha-suhel-9bb625174/" target="_blank"><i class="fab fa-linkedin-in"></i></a>          
+                </div>
+              </div>
+            </div>
+            <div class="footer-bottom">
+              <p>&copy; 2023 Sasha Suhel | All rights reserved.</p>
+            </div>
+          </footer>   
+    </body>
+</html>
